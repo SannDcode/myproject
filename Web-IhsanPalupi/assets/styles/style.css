@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Source+Code+Pro:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEB3;
+}
+
+.heading {
+    display: flex;
+    margin: 0px;
+    padding: 60px;
+    background-color: #8FBC8F;
+    font-size: 3em;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #696969;
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li.border {
+    border-right: 2px solid black;
+}
+
+nav li {
+    position: relative;
+    padding: 15px;
+    transition: background-color 0.5s ease-out 0.1s;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+nav li:hover {
+    background-color: #2F4F4F;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #A9A9A9;
+    transition: background-color 1s ease-out 0.1s;
+}
+
+nav .dropdown-content a:active {
+    border: 2px solid black;
+}
+
+main {
+    flex: 3;
+    gap: 1.5rem;
+    padding: 20px;
+    display: flex;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.box-code {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    width: 500px;
+    text-shadow: 0xp 0px 6px 10px cyan;
+}
+
+header {
+    display: inline;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+.filter-image {
+    width: 100px;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-tutor {
+    width: 500px;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.filter-li {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.box {
+    box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.fa.fa-instagram {
+    display: inline;
+    font-weight: 900;
+}
+
+.fa.fa-whatsapp {
+    display: inline;
+    font-weight: 900;
+}
+
+.fa.fa-envelope {
+    display: inline;
+    font-weight: 900;
+}
+  
+aside {
+    flex: 1;
+    padding-left: 15px;
+    width: 35%;
+    margin: 0;
+}
+
+table {
+    line-height: 2em
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #2F4F4F;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 1300px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+      font-size: 14px;
+      max-width: 999px;
+      width: 100%;
+    }
+}
